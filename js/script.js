@@ -21,6 +21,7 @@ jQuery('document').ready(function () {
 		let up = $(window).scrollTop();
 		//console.log('up = ' + up);
 		//console.log('scrollPos = ' + scrollPos);
+		//опа
 		if (up <= scrollPos) {
 			$('.header').addClass('fix')
 		} else if (up => scrollPos) {
