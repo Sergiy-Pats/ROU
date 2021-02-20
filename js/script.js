@@ -33,7 +33,15 @@ jQuery('document').ready(function () {
 		} else if (y < 2 && window.innerWidth > 840) {
 			let headerHeight = $('.header').css({ 'height': '180px', 'background-color': '#ebeaf900' });
 		}
+
 	});
+	$(window).on("resize", function () {
+		if (window.innerWidth < 840) {
+			let headerHeight = $('.header').css({ 'height': '50px', 'background-color': '#ebeaf9' });
+		} else if (window.innerWidth > 840) {
+			let headerHeight = $('.header').css({ 'height': '180px', 'background-color': '#ebeaf900' });
+		}
+	})
 
 
 	onmousemove = function (e) {
