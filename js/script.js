@@ -29,7 +29,7 @@ jQuery('document').ready(function () {
 		scrollPos = up;
 		if (y >= 2) {
 			let headerHeight = $('.header').css({ 'height': '50px', 'background-color': '#ebeaf9' });
-		} else {
+		} else if (y < 2 && window.innerWidth > 840) {
 			let headerHeight = $('.header').css({ 'height': '180px', 'background-color': '#ebeaf900' });
 		}
 	});
