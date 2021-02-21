@@ -48,7 +48,7 @@ $(window).on("resize", function () {
 	}
 })
 
-
+//asdasdasdasd
 onmousemove = function (e) {
 	//console.log("mouse location:", e.clientX, e.clientY)
 	if (e.clientY <= 30) {
