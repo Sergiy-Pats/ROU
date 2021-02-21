@@ -1,4 +1,14 @@
-$('.header').addClass('fix')
+
+$('.header').addClass('fix');
+let y_start = window.scrollY;
+console.log('y-start = ' + y_start);
+
+if (y_start >= 2) {
+	console.log(y_start);
+	let headerHeight = $('.header').css({ 'height': '50px', 'background-color': '#ebeaf9' });
+}/* else {
+	let headerHeight = $('.header').css({ 'height': '180px', 'background-color': '#ebeaf900' });
+}*/
 
 let scrollPos = 0;
 window.addEventListener('scroll', function () {
@@ -33,15 +43,23 @@ window.addEventListener('scroll', function () {
 $(window).on("resize", function () {
 	if (window.innerWidth < 840) {
 		let headerHeight = $('.header').css({ 'height': '50px', 'background-color': '#ebeaf9' });
-	} else if (window.innerWidth > 840) {
+	} else if (window.innerWidth > 840 && y < 2) {
 		let headerHeight = $('.header').css({ 'height': '180px', 'background-color': '#ebeaf900' });
 	}
 })
 
 
 onmousemove = function (e) {
-	console.log("mouse location:", e.clientX, e.clientY)
+	//console.log("mouse location:", e.clientX, e.clientY)
 	if (e.clientY <= 30) {
 		$('.header').addClass('fix')
 	}
 }
+/*
+if (y >= 2) {
+	let headerHeight = $('.header').css({ 'height': '50px', 'background-color': '#ebeaf9' });
+} else if (y < 2 && window.innerWidth > 840) {
+	let headerHeight = $('.header').css({ 'height': '180px', 'background-color': '#ebeaf900' });
+};*/
+
+
