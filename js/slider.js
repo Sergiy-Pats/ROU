@@ -3,7 +3,13 @@
 if (window.innerWidth <= 768) {
 	$('.slider').slick({
 		slidesToShow: 1,
-		infinite: false,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 6200,
+		pauseOnHover: true,
+		pauseOnFocus: true,
+		pauseOnDotHover: false,
+		speed: 800,
 		dots: true,
 		arrows: false,
 		mobileFirst: true,
@@ -16,7 +22,13 @@ $(window).on('resize', function () {
 	if (this.innerWidth <= 768) {
 		$('.slider').slick({
 			slidesToShow: 1,
-			infinite: false,
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 6200,
+			pauseOnHover: true,
+			pauseOnFocus: true,
+			pauseOnDotHover: false,
+			speed: 800,
 			arrows: false,
 			dots: true,
 			mobileFirst: true,
