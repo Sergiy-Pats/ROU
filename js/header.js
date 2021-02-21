@@ -1,4 +1,3 @@
-
 $('.header').addClass('fix');
 let y_start = window.scrollY;
 console.log('y-start = ' + y_start);
