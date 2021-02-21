@@ -1,9 +1,9 @@
 $('.header').addClass('fix');
 let y_start = window.scrollY;
-console.log('y-start = ' + y_start);
+//console.log('y-start = ' + y_start);
 
 if (y_start >= 2) {
-	console.log(y_start);
+	//console.log(y_start);
 	let headerHeight = $('.header').css({ 'height': '50px', 'background-color': '#ebeaf9' });
 }/* else {
 	let headerHeight = $('.header').css({ 'height': '180px', 'background-color': '#ebeaf900' });
@@ -24,6 +24,8 @@ window.addEventListener('scroll', function () {
 			}*/
 	let up = $(window).scrollTop();
 	//console.log('up = ' + up);
+	//console.log('pos = ' + scrollPos);
+
 	//console.log('scrollPos = ' + scrollPos);
 	//опа
 	if (up <= scrollPos) {
@@ -40,9 +42,13 @@ window.addEventListener('scroll', function () {
 
 });
 $(window).on("resize", function () {
-	if (window.innerWidth < 840) {
+	let y_head = window.scrollY;
+	let wdth_head = window.innerWidth;
+	//console.log("WDTH = " + wdth_head);
+
+	if (wdth_head < 840) {
 		let headerHeight = $('.header').css({ 'height': '50px', 'background-color': '#ebeaf9' });
-	} else if (window.innerWidth > 840 && y < 2) {
+	} else if (wdth_head > 840 && y_head < 2) {
 		let headerHeight = $('.header').css({ 'height': '180px', 'background-color': '#ebeaf900' });
 	}
 })
