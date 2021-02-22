@@ -24,7 +24,7 @@ $(window).on('resize', function () {
 			slidesToShow: 1,
 			infinite: true,
 			autoplay: true,
-			autoplaySpeed: 6200,
+			autoplaySpeed: 3200,
 			pauseOnHover: true,
 			pauseOnFocus: true,
 			pauseOnDotHover: false,
