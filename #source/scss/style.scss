@@ -852,78 +852,35 @@ html {
 	}
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.services {
-		min-height: auto;
 		padding: 0 0 50px 0;
+		min-height: auto;
+		&__body {
+			display: block;
+		}
 		&__item {
 			max-width: 100%;
 		}
 	}
 	.slider-2 {
-		display: block;
 		position: relative;
 		padding: 0 20px;
 		max-width: 100%;
 		margin-bottom: 30px;
-		justify-content: center;
-		justify-items: center;
 
-		& .slick-track {
-			display: flex;
-
-			min-height: 476px;
+		.slick-list {
+			overflow: hidden;
 		}
-		.slick-slide {
-			min-height: 100%;
+
+		.slick-track {
+			display: flex;
+		}
+		& .slick-slide {
 			margin: 0 5px;
 
-			width: 100%;
 			//opacity: 0.2;
 		}
 		/*.slick-center {opacity: 1;}*/
-		& .slick-arrow {
-			position: absolute;
-			top: 50%;
-			margin-top: -25px;
-			z-index: 10;
-			font-size: 0;
-			width: 40px;
-			height: 40px;
-			&.slick-disabled {
-				opacity: 0.2;
-			}
-		}
-		& .slick-arrow.slick-next {
-			background: url(../img/ic_arrow_next.png) 0 0 / 100% no-repeat;
-			right: 0;
-		}
-		& .slick-arrow.slick-prev {
-			background: url(../img/ic_arrow_back.png) 0 0 / 100% no-repeat;
-			left: 0;
-		}
-		.slick-dots {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			& li {
-				list-style: none;
-				margin: 0 10px;
-				&.slick-active {
-					& button {
-						background-color: rgba(36, 197, 238, 0.918);
-						width: 28px;
-						height: 3px;
-					}
-				}
-			}
-			& button {
-				font-size: 0;
-				width: 25px;
-				height: 2px;
-				background-color: #fff;
-				border-radius: 20%;
-			}
-		}
 	}
 }

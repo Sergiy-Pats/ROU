@@ -3,6 +3,8 @@ jQuery('document').ready(function () {
 		$('.header__burger,.header, .header__menu, body').toggleClass('active');
 	})
 	import('../js/header.js');
+
+	import('../js/slider.js');
 	let scrollPos_1 = 0;
 	window.addEventListener('scroll', function (e) {
 		//console.log(window.innerWidth);
@@ -45,7 +47,6 @@ jQuery('document').ready(function () {
 	//-------------------------------
 
 
-	import('../js/slider.js');
 
 })
 

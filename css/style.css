@@ -1023,82 +1023,33 @@ html {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .services {
-    min-height: auto;
     padding: 0 0 50px 0;
+    min-height: auto;
+  }
+  .services__body {
+    display: block;
   }
   .services__item {
     max-width: 100%;
   }
   .slider-2 {
-    display: block;
     position: relative;
     padding: 0 20px;
     max-width: 100%;
     margin-bottom: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    justify-items: center;
     /*.slick-center {opacity: 1;}*/
+  }
+  .slider-2 .slick-list {
+    overflow: hidden;
   }
   .slider-2 .slick-track {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-height: 476px;
   }
   .slider-2 .slick-slide {
-    min-height: 100%;
     margin: 0 5px;
-    width: 100%;
-  }
-  .slider-2 .slick-arrow {
-    position: absolute;
-    top: 50%;
-    margin-top: -25px;
-    z-index: 10;
-    font-size: 0;
-    width: 40px;
-    height: 40px;
-  }
-  .slider-2 .slick-arrow.slick-disabled {
-    opacity: 0.2;
-  }
-  .slider-2 .slick-arrow.slick-next {
-    background: url(../img/ic_arrow_next.png) 0 0/100% no-repeat;
-    right: 0;
-  }
-  .slider-2 .slick-arrow.slick-prev {
-    background: url(../img/ic_arrow_back.png) 0 0/100% no-repeat;
-    left: 0;
-  }
-  .slider-2 .slick-dots {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .slider-2 .slick-dots li {
-    list-style: none;
-    margin: 0 10px;
-  }
-  .slider-2 .slick-dots li.slick-active button {
-    background-color: rgba(36, 197, 238, 0.918);
-    width: 28px;
-    height: 3px;
-  }
-  .slider-2 .slick-dots button {
-    font-size: 0;
-    width: 25px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 20%;
   }
 }
