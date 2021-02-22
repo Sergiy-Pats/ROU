@@ -93,7 +93,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  height: auto;
 }
 
 .content {
@@ -232,12 +232,6 @@ html {
   .menu__link:active {
     color: #391642;
   }
-  .menu__button:hover {
-    color: #c04ae2;
-  }
-  .menu__button:active {
-    color: #391642;
-  }
   .menu__socs .fab:hover {
     color: #c04ae2;
   }
@@ -246,7 +240,7 @@ html {
   }
 }
 
-.button {
+.button-1 {
   display: block;
   width: 181px;
   height: 48px;
@@ -260,6 +254,19 @@ html {
   font-weight: 800;
   letter-spacing: -0.025em;
   color: #111111;
+}
+
+.button-1:active {
+  color: #391642;
+}
+
+@media (min-width: 768.7px) {
+  .button-1:hover {
+    color: #c04ae2;
+  }
+  .button-1:active {
+    color: #391642;
+  }
 }
 
 @media (max-width: 840px) {
@@ -460,21 +467,21 @@ html {
   height: 100%;
 }
 
-._content {
+.content-hero {
   margin: 0 0 0 20px;
 }
 
-._content__img {
+.content-hero__img {
   position: relative;
   width: 0;
 }
 
-._content__img img {
+.content-hero__img img {
   height: 100%;
   width: 100%;
 }
 
-._content__title {
+.content-hero__title {
   font-family: Overpass;
   font-size: 90px;
   line-height: 108px;
@@ -484,7 +491,7 @@ html {
   margin: 0 0 15px 0;
 }
 
-._content__text {
+.content-hero__text {
   font-size: 30px;
   font-weight: 400;
   letter-spacing: normal;
@@ -492,16 +499,20 @@ html {
   margin: 0 0 50px 0;
 }
 
-._content__text span {
+.content-hero__text span {
   line-height: 42px;
 }
 
-._content__button {
-  display: block;
-  font-family: Overpass;
+.content-hero__button {
   font-size: 24px;
   font-weight: 800;
+  padding: 24px 0 0 0;
   letter-spacing: -0.025em;
+}
+
+.button-2 {
+  display: block;
+  font-family: Overpass;
   color: #ffffff;
   max-width: 241px;
   height: 72px;
@@ -510,18 +521,17 @@ html {
           box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.07);
   border-radius: 7px;
   text-align: center;
-  padding: 24px 0 0 0;
 }
 
-._content__button:active {
+.button-2:active {
   background: #9909a7;
 }
 
 @media (min-width: 768px) {
-  ._content__button:hover {
+  .button-2:hover {
     background: #ac0abb;
   }
-  ._content__button:active {
+  .button-2:active {
     background: #9909a7;
   }
 }
@@ -533,7 +543,7 @@ html {
             flex: 0 1 90%;
     margin: 0 auto;
   }
-  .hero ._content__img {
+  .hero .content-hero__img {
     margin: 20px 0 0 0;
     width: 100%;
   }
@@ -543,7 +553,7 @@ html {
 }
 
 @media (max-width: 610px) {
-  .hero ._content__title {
+  .hero .content-hero__title {
     font-size: 50px;
     line-height: 60px;
   }
@@ -654,7 +664,13 @@ html {
 }
 
 .item-intro-1 {
-  left: -460px;
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+}
+
+.item-intro-3 {
+  -webkit-transform: translateX(500px);
+          transform: translateX(500px);
 }
 
 .slider {
@@ -737,5 +753,168 @@ html {
   .block-title__bigger {
     font-size: 42px;
     line-height: 1.3;
+  }
+}
+
+.about {
+  min-height: 840px;
+  overflow: hidden;
+}
+
+.about__container {
+  background: url(../img/about-items/about_item1.png) right top/40px 40px no-repeat, url(../img/about-items/about_blur.png) center 0/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 175px 10px;
+  height: 100%;
+}
+
+.about__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  max-width: 475px;
+}
+
+.about__images {
+  margin: 0 0 0 100px;
+}
+
+.content-about__title {
+  font-family: Overpass;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #222222;
+  margin: 0 0 8px 0;
+}
+
+.content-about__text {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #5e5858;
+  margin: 0 0 48px 0;
+}
+
+.content-about__text span {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #5e5858;
+}
+
+.content-about__button {
+  padding: 20px 0 0 0;
+  margin: 0 0 40px 0;
+}
+
+.content-about__button span {
+  font-family: Overpass;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.images-about {
+  position: relative;
+  min-height: 420px;
+  display: inline-block;
+  width: 770px;
+}
+
+.images-about:before {
+  content: "";
+  width: 400px;
+  height: 408px;
+  display: block;
+  background: url(../img/about_photo2.jpg) left top/cover;
+  position: absolute;
+  bottom: 8%;
+  right: -146px;
+  border-radius: 20px;
+}
+
+.images-about::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 540px;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  border-radius: 20px;
+  -webkit-transform: rotate(9deg) translate(-187px, 0px);
+          transform: rotate(9deg) translate(-187px, 0px);
+}
+
+.images-about__item2 {
+  position: absolute;
+  -webkit-transform: translate(230px, 15px);
+          transform: translate(230px, 15px);
+}
+
+.images-about__item {
+  max-width: 400px;
+  height: 408px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.images-about__item:nth-child(1) {
+  z-index: 1;
+  position: relative;
+}
+
+.images-about__item:nth-child(1) img {
+  -o-object-position: top right;
+     object-position: top right;
+}
+
+.images-about__item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1525px) {
+  .about__container {
+    background: url(../img/about-items/about_item1.png) right top/40px 40px no-repeat;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    justify-items: center;
+  }
+  .about__content {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  .about__images {
+    margin: 0 auto;
+  }
+  .images-about::before {
+    -webkit-transform: translate(-160px, 27%);
+            transform: translate(-160px, 27%);
+  }
+  .images-about::after {
+    -webkit-transform: rotate(10deg) translate(-354px, 30px);
+            transform: rotate(10deg) translate(-354px, 30px);
+  }
+  .images-about__item2 {
+    -webkit-transform: translate(250px, 10px);
+            transform: translate(250px, 10px);
   }
 }
