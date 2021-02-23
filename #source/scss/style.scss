@@ -747,6 +747,8 @@ html {
 		max-width: 725px;
 		grid-column: 2 / 3;
 	}
+	.container {
+	}
 	&__body {
 		display: grid;
 		grid-template: repeat(14, 1fr) / repeat(3, 1fr);
