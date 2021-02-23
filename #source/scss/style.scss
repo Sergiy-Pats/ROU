@@ -735,8 +735,7 @@ html {
 	background: url(../img/services-images/objects_services.png) center / 1920px 100% no-repeat,
 		url(../img/services-images/blur-sevises.png) center / 1920px 100% no-repeat,
 		url(../img/services-images/bg_services.png) center / cover no-repeat;
-	&__container {
-	}
+
 	&__top {
 		display: grid;
 		grid-template: 1fr, repeat(2, 50%);
