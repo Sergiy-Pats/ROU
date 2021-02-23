@@ -947,7 +947,6 @@ html {
 	&:nth-child(even) {
 		flex-direction: row-reverse;
 		.image-block {
-			//grid-column: 2 / span 1;
 			&__img {
 				top: 0;
 				right: 0;
