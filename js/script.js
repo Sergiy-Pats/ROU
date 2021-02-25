@@ -22,14 +22,28 @@ jQuery('document').ready(function () {
 
 
 		if (anim + -150 < top && window.innerWidth > 1180) {
-			$('.item-intro-1').css("transform", 'translateX(' + lft + 'px)');
+			$('.item-intro-1').css({
+				'transition': 'all, 0.1s',
+				'transform': 'translateX(' + lft + 'px)'
+			});
 
-			$('.item-intro-3').css("transform", 'translateX(' + -lft + 'px)');
+			$('.item-intro-3').css({
+				"transform": 'translateX(' + -lft + 'px)',
+				'transition': 'all, 0.1s',
+			});
 		}
 		else if (lft => 0) {
-			$('.item-intro-1').css('transform', 'translateX(0)');
+			$('.item-intro-1').css({
+				'transform': 'translateX(0)',
 
-			$('.item-intro-3').css("transform", 'translateX(0)');
+				'transition': 'all, 0.1s',
+			});
+
+			$('.item-intro-3').css({
+				'transform': 'translateX(0)',
+
+				'transition': 'all, 0.1s',
+			});
 		}
 
 

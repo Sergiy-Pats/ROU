@@ -40,7 +40,7 @@ function slider_2() {
 				settings: 'unslick'
 			},
 			{
-				breakpoint: 767,
+				breakpoint: 768,
 				settings: {
 					slidesToShow: 2,
 				}
@@ -55,7 +55,7 @@ function slider_2() {
 
 	});
 }
-if ($(window).width() < 767) {
+if ($(window).width() <= 768) {
 	slider_1();
 	slider_2();
 }
@@ -65,7 +65,9 @@ if ($(window).width() < 767) {
 $(window).on('resize', function () {
 	//console.log('width = ' + window.innerWidth);
 	let $windowWidth = $('windwow').width();
-	if ($windowWidth <= 768 && $('.slider-2').hasClass('slick-initialized') && $('.slider').hasClass('slick-initialized')) {
+	if ($windowWidth <= 768 && $('.slider-2').hasClass('slick-initialized')) {
+		//$('.slider').slick(unslick);
+		//$('.slider-2').slick(unslick);
 	}
 	else {
 		slider_1();
