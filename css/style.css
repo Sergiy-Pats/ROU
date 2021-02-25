@@ -1436,8 +1436,8 @@ html {
 }
 
 .testimotionals {
-  background: url(../img/testimotionals/testimotionals_style_elememts.png) center/contain, url(../img/testimotionals/bg.png) center top/cover, -webkit-gradient(linear, left bottom, left top, from(#eef1f7), color-stop(25%, #f9fcff));
-  background: url(../img/testimotionals/testimotionals_style_elememts.png) center/contain, url(../img/testimotionals/bg.png) center top/cover, linear-gradient(0deg, #eef1f7 0%, #f9fcff 25%);
+  background: url(../img/testimotionals/testimotionals_style_elememts.png) center center/1180px no-repeat, url(../img/testimotionals/bg.png) center top/cover, -webkit-gradient(linear, left bottom, left top, from(#eef1f7), color-stop(25%, #f9fcff));
+  background: url(../img/testimotionals/testimotionals_style_elememts.png) center center/1180px no-repeat, url(../img/testimotionals/bg.png) center top/cover, linear-gradient(0deg, #eef1f7 0%, #f9fcff 25%);
   min-height: 900px;
 }
 
