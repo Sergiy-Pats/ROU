@@ -40,7 +40,7 @@ function slider_2() {
 				settings: 'unslick'
 			},
 			{
-				breakpoint: 768,
+				breakpoint: 769,
 				settings: {
 					slidesToShow: 2,
 				}
@@ -55,6 +55,16 @@ function slider_2() {
 
 	});
 }
+function slider_3() {
+	$(".slider-3").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots: true,
+	})
+}
+
+slider_3();
 if ($(window).width() <= 768) {
 	slider_1();
 	slider_2();

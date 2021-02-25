@@ -155,7 +155,7 @@ html {
 	color: #111111;
 
 	&:active {
-		color: #391642;
+		color: #5f1b70;
 	}
 }
 @media (min-width: 768.7px) {
@@ -164,7 +164,7 @@ html {
 			color: #c04ae2;
 		}
 		&:active {
-			color: #391642;
+			color: #5f1b70;
 		}
 	}
 }
@@ -587,11 +587,11 @@ html {
 			}
 		}
 		& button {
-			font-size: 0;
 			width: 25px;
 			height: 2px;
 			background-color: #ebeaf9;
 			border-radius: 20%;
+			font-size: 0px;
 		}
 	}
 }
@@ -916,11 +916,16 @@ html {
 		font-weight: 800;
 		letter-spacing: -0.025em;
 		color: #111111;
+		transition: all 0.4s;
 
+		&:active {
+			color: #7c2196;
+		}
 		margin: 5px 0 0 0;
 		& span {
 			display: inline-block;
 			position: relative;
+			transition: all 0.4s;
 			&::before {
 				content: "";
 				position: absolute;
@@ -929,6 +934,35 @@ html {
 				width: 100%;
 				height: 2px;
 				background-color: #c04ae2;
+				transition: all 0.4s;
+			}
+		}
+		& span:active {
+			&::before {
+				background-color: #111;
+				width: 100%;
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.portfolio__footer {
+		transition: all 0.4s;
+		&:hover {
+			color: #c04ae2;
+		}
+		&:active {
+			color: #7c2196;
+		}
+		& span:hover {
+			&::before {
+				width: 0%;
+			}
+		}
+		& span:active {
+			&::before {
+				background-color: #111;
+				width: 100%;
 			}
 		}
 	}
@@ -1173,9 +1207,6 @@ html {
 			&:nth-child(4) {
 				grid-column: 4 / span 3;
 			}
-			&:nth-child(2),
-			&:nth-child(4) {
-			}
 		}
 	}
 }
@@ -1194,5 +1225,151 @@ html {
 	}
 	.members__item:nth-child(even) {
 		margin: 0 auto;
+	}
+}
+
+.testimotionals {
+	background: url(../img/testimotionals/testimotionals_style_elememts.png) center / contain,
+		linear-gradient(0deg, #eef1f7 0%, #f9fcff 45%), url(../img/testimotionals/bg.png) center top / cover;
+	min-height: 900px;
+	//opacity: 0.45;
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		position: relative;
+		padding: 120px 0;
+	}
+
+	&__items {
+		margin: 145px 0 0 0;
+		&::before {
+			content: "";
+			display: block;
+			width: 80px;
+			height: 64px;
+			background: url(../img/testimotionals/before.png);
+			position: absolute;
+			transform: translateX(-120%);
+		}
+	}
+
+	&__image {
+		margin: 50px 20px 0 0px;
+		position: relative;
+		align-self: end;
+		justify-self: end;
+		display: block;
+		//padding: 0 20px 0 80px;
+		max-width: 470px;
+		height: 604px;
+		overflow: hidden;
+		flex: 0 0 50%;
+		transform-origin: right bottom;
+		transform: perspective(400px) rotateY(-7deg);
+		border-radius: 21px;
+		& img {
+			border-radius: 21px;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			transform-origin: right bottom;
+			transform: perspective(400px) rotateY(7deg);
+		}
+	}
+}
+.slider-3 {
+	position: relative;
+	padding: 15px;
+	max-width: 100%;
+	//margin-bottom: 30px;
+	& .slick-track {
+		display: flex;
+	}
+	.slick-slide {
+		max-width: 100%;
+		//opacity: 0.2;
+	}
+
+	& .slick-dots {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		bottom: -50px;
+		left: 40px;
+		justify-content: left;
+		margin: 50px 0 0 0;
+		//list-style: none;
+		& li {
+			//list-style: none;
+			&.slick-active {
+				& button {
+					width: 30px;
+				}
+			}
+		}
+		& button {
+			border-radius: 10px;
+			width: 12px;
+			height: 12px;
+			display: block;
+			background-color: #c04ae2;
+			margin: 0 4px;
+			font-size: 0;
+		}
+	}
+	&__item {
+		max-width: 560px;
+	}
+
+	&__text {
+		line-height: 36px;
+		font-weight: 400;
+		text-transform: none;
+		letter-spacing: normal;
+		color: #5e5858;
+		font-size: 24px;
+		margin: 40px 0;
+	}
+
+	&__author {
+		margin: 0 0 0 50px;
+		font-family: Overpass;
+		font-size: 24px;
+		line-height: 48px;
+		font-weight: 800;
+		color: #111111;
+		&::before {
+			content: "";
+			display: block;
+			width: 20px;
+			height: 2px;
+			background-color: #333;
+			transform: translate(-200%, 23px);
+		}
+		& span {
+			font-family: Roboto;
+			font-size: 18px;
+			line-height: 36px;
+			font-weight: 400;
+			color: #adb0ba;
+			margin: 0 0 0 10px;
+		}
+	}
+}
+
+@media (max-width: 768.8px) {
+	.testimotionals {
+		&__body {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		&__image {
+			justify-self: center;
+			align-self: center;
+		}
+		&__items {
+			margin: 50px 0 0 0;
+		}
 	}
 }
