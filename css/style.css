@@ -1806,7 +1806,7 @@ html {
   min-height: 1020px;
   background-color: #f3f3f4;
   padding: 0 20px;
-  background: url(../img/blog/elements.png) center center/1920px 90% no-repeat, url(../img/blog/blur.png) 0 0/1920px 100% no-repeat, url(/img/blog/bg.jpg) 0 0/cover;
+  background: url(../img/blog/elements.png) center center/1920px 90% no-repeat, url(../img/blog/blur.png) 0 0/1920px 100% no-repeat, url(../img/blog/bg.jpg) 0 0/cover;
 }
 
 .blog__body {
