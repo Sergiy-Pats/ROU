@@ -63,8 +63,42 @@ function slider_3() {
 		dots: true,
 	})
 }
+function slider_4() {
+	$('.slider-4').slick({
+		slidesToShow: 1,
+		arrows: false,
+		dots: false,
+		responsive: [
+			{
+				breakpoint: 10000,
+				settings: 'unslick'
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+
+					centerMode: true,
+					variableWidth: true,
+				}
+			},
+			{
+				breakpoint: 440,
+				settings: {
+					variableWidth: false,
+					centerMode: false
+				}
+			}
+		]
+
+
+
+	})
+}
 
 slider_3();
+if ($(window).width() <= 1024) {
+	slider_4();
+}
 if ($(window).width() <= 768) {
 	slider_1();
 	slider_2();
@@ -82,5 +116,13 @@ $(window).on('resize', function () {
 	else {
 		slider_1();
 		slider_2();
+	}
+	if ($windowWidth <= 1024 && $('.slider-4').hasClass('slick-initialized')) {
+		//$('.slider').slick(unslick);
+		//$('.slider-2').slick(unslick);
+	}
+	else {
+
+		slider_4();
 	}
 })
