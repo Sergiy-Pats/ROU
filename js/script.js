@@ -3,7 +3,6 @@ jQuery('document').ready(function () {
 		$('.header__burger,.header, .header__menu, body').toggleClass('active');
 	})
 	import('../js/header.js');
-
 	import('../js/slider.js');
 	let scrollPos_1 = 0;
 	window.addEventListener('scroll', function (e) {
@@ -28,7 +27,7 @@ jQuery('document').ready(function () {
 			});
 
 			$('.item-intro-3').css({
-				"transform": 'translateX(' + -lft + 'px)',
+				"transform": 'translateX(' + -lft + 'px)',//sadsdas
 				'transition': 'all, 0.1s',
 			});
 		}
