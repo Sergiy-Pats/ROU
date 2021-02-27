@@ -1830,6 +1830,25 @@ html {
 			margin-top: 5px;
 		}
 	}
+	&__link:active {
+		a {
+			color: rgb(58, 57, 57);
+		}
+	}
+}
+@media (min-width: 767.8px) {
+	.column-footer {
+		&__link:hover {
+			a {
+				color: #000;
+			}
+		}
+		&__link:active {
+			a {
+				color: rgb(58, 57, 57);
+			}
+		}
+	}
 }
 .bottom-footer {
 	padding: 20px 0 0 0;

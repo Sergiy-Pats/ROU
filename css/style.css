@@ -2108,6 +2108,19 @@ html {
   margin-top: 5px;
 }
 
+.column-footer__link:active a {
+  color: #3a3939;
+}
+
+@media (min-width: 767.8px) {
+  .column-footer__link:hover a {
+    color: #000;
+  }
+  .column-footer__link:active a {
+    color: #3a3939;
+  }
+}
+
 .bottom-footer {
   padding: 20px 0 0 0;
   display: -webkit-box;
