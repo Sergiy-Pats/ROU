@@ -4,23 +4,24 @@ jQuery('document').ready(function () {
 	})
 	import('../js/header.js');
 	import('../js/slider.js');
+	import('../js/menu-click.js');
 	let scrollPos_1 = 0;
 	window.addEventListener('scroll', function (e) {
 		//console.log(window.innerWidth);
 
 		let anim = scrollY;
 		//console.log('anim = ' + anim);
-		let top = $('.intro').offset().top;
+		let top_intro = $('.intro').offset().top;
 
 		//console.log('top = ' + top);
 
 
-		let lft = anim - top - 500 + 345;
+		let lft = anim - top_intro - 500 + 345;
 		//console.log("left = " + lft);
 
 
 
-		if (anim + -150 < top && window.innerWidth > 1180) {
+		if (anim + -150 < top_intro && window.innerWidth > 1180) {
 			$('.item-intro-1').css({
 				'transition': 'all, 0.1s',
 				'transform': 'translateX(' + lft + 'px)'
@@ -51,12 +52,13 @@ jQuery('document').ready(function () {
 
 	//-------------------------------------------------------------
 	//отмена стандартного действия при клике на кнопку (а href)
-	$('a').on('click', function (event) {
-		console.log('Мы отменили действие');
-
-		event.preventDefault();
-
-	}, false);
+	/*
+		$('a').on('click', function (event) {
+			console.log('Мы отменили действие');
+	
+			event.preventDefault();
+	
+		});*/
 	//-------------------------------
 
 
