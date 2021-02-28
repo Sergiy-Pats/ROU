@@ -311,7 +311,7 @@ html {
 	min-height: 1080px;
 	padding: 260px 0 260px 0;
 	background: url(../img/blur.png) center / 100% 100% no-repeat, url(../img/bg_header2.png) center,
-		url(../img/bg_header.png), loading(lazy);
+		url(../img/bg_header.png);
 	//background: url(../img/hero-bg.jpg);
 	&__container2 {
 		max-width: 1210px;
@@ -471,7 +471,7 @@ html {
 	}
 }
 .intro {
-	background: url(../img/intro-bg.png) center center / 100% auto no-repeat, loading(lazy);
+	background: url(../img/intro-bg.png) center center / 100% auto no-repeat;
 	padding: 0 20px;
 	overflow: hidden;
 	&__container {
@@ -617,7 +617,7 @@ html {
 
 	&__container {
 		background: url(../img/about-items/about_item1.png) right top / 40px 40px no-repeat,
-			url(../img/about-items/about_blur.png) center 0 / cover no-repeat, loading(lazy);
+			url(../img/about-items/about_blur.png) center 0 / cover no-repeat;
 		display: flex;
 		padding: 175px 10px;
 		height: 100%;
@@ -736,7 +736,7 @@ html {
 	min-height: 1670px;
 	background: url(../img/services-images/objects_services.png) center / 1920px 100% no-repeat,
 		url(../img/services-images/blur-sevises.png) center / 1920px 100% no-repeat,
-		url(../img/services-images/bg_services.png) center / cover no-repeat, loading(lazy);
+		url(../img/services-images/bg_services.png) center / cover no-repeat;
 
 	&__top {
 		display: grid;
@@ -891,7 +891,7 @@ html {
 	background: url(../img/portfolio-images/portfolio_objects.png) center top / 1920px 100% no-repeat,
 		url(../img/portfolio-images/portfolio_blur.png) 0 0 / 100% no-repeat,
 		url(../img/portfolio-images/portfolio_bg.png) top center / cover no-repeat,
-		linear-gradient(-40deg, #dfe9f3 1%, #ffffff 98%), loading(lazy);
+		linear-gradient(-40deg, #dfe9f3 1%, #ffffff 98%);
 	background-color: #f2f4fb;
 	&__container {
 		padding: 200px 10px 200px;
@@ -1077,7 +1077,7 @@ html {
 	min-height: 1150px;
 	padding: 200px 20px 120px;
 	background: url(../img/team/team-styleElements.png) center 70% / 1920px 100% no-repeat,
-		url(../img/team/teamBlur.png) center center / 100% 100% no-repeat, loading(lazy);
+		url(../img/team/teamBlur.png) center center / 100% 100% no-repeat;
 
 	&__title {
 		text-align: center;
@@ -1228,8 +1228,7 @@ html {
 
 .testimotionals {
 	background: url(../img/testimotionals/testimotionals_style_elememts.png) center center / 1920px 100% no-repeat,
-		url(../img/testimotionals/bg.png) center top / cover, linear-gradient(0deg, #eef1f7 0%, #f9fcff 25%),
-		loading(lazy);
+		url(../img/testimotionals/bg.png) center top / cover, linear-gradient(0deg, #eef1f7 0%, #f9fcff 25%);
 	min-height: 900px;
 	//opacity: 0.45;
 	&__body {
@@ -1246,7 +1245,7 @@ html {
 			display: block;
 			width: 80px;
 			height: 64px;
-			background: url(../img/testimotionals/before.png), loading(lazy);
+			background: url(../img/testimotionals/before.png);
 			position: absolute;
 			transform: translateX(-120%);
 		}
@@ -1377,7 +1376,7 @@ html {
 	padding: 190px 25px 100px;
 	min-height: 1420px;
 	background: url(../img/contact/contact_style_elements.png) center center / 1920px 100% no-repeat,
-		url(../img/contact/contact_blur.png) center center / 1180px 100% no-repeat, loading(lazy);
+		url(../img/contact/contact_blur.png) center center / 1180px 100% no-repeat;
 }
 .body-contact {
 	&__title {
@@ -1557,7 +1556,7 @@ html {
 	background-color: #f3f3f4;
 	padding: 0 20px;
 	background: url(../img/blog/elements.png) center center / 1920px 90% no-repeat,
-		url(../img/blog/blur.png) 0 0 /1920px 100% no-repeat, url(../img/blog/bg.jpg) 0 0 / cover, loading(lazy);
+		url(../img/blog/blur.png) 0 0 /1920px 100% no-repeat, url(../img/blog/bg.jpg) 0 0 / cover;
 	&__body {
 		padding: 210px 0 210px 0;
 	}
@@ -1647,7 +1646,7 @@ html {
 			display: inline-block;
 			width: 50px;
 			height: 18px;
-			background: url(../img/blog/likes.png) 0 0 / 100% no-repeat, loading(lazy);
+			background: url(../img/blog/likes.png) 0 0 / 100% no-repeat;
 			//margin: 0 0 0 30px;
 			//align-self: end;
 			//justify-self: end;
@@ -1662,7 +1661,7 @@ html {
 	.blog-item__author {
 		//position: relative;
 		span {
-			background: url(../img/blog/1photo.jpg) 0 0 / cover, loading(lazy);
+			background: url(../img/blog/1photo.jpg) 0 0 / cover;
 		}
 	}
 }
@@ -1670,7 +1669,7 @@ html {
 	.blog-item__author {
 		//position: relative;
 		span {
-			background: url(../img/blog/2photo.jpg) 0 0 / cover, loading(lazy);
+			background: url(../img/blog/2photo.jpg) 0 0 / cover;
 		}
 	}
 }
@@ -1678,7 +1677,7 @@ html {
 	.blog-item__author {
 		//position: relative;
 		span {
-			background: url(../img/blog/3photo.jpg) 0 0 / cover, loading(lazy);
+			background: url(../img/blog/3photo.jpg) 0 0 / cover;
 		}
 	}
 }
