@@ -1,4 +1,4 @@
-$(".menu__links").on("click", "a", function (event) {
+$("#menu").on("click", "a", function (event) {
 	event.preventDefault();
 	var id = $(this).attr('href'),
 		menu_top = $(id).offset().top;
