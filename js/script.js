@@ -52,13 +52,13 @@ jQuery('document').ready(function () {
 
 	//-------------------------------------------------------------
 	//отмена стандартного действия при клике на кнопку (а href)
-	/*
-		$('a').on('click', function (event) {
-			console.log('Мы отменили действие');
-	
-			event.preventDefault();
-	
-		});*/
+
+	$('a').on('click', function (event) {
+		console.log('Мы отменили действие');
+
+		event.preventDefault();
+
+	});
 	//-------------------------------
 
 
